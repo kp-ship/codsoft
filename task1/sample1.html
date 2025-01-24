@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Flow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fb;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card h1 {
+      font-size: 1.8rem;
+      color: #4c4f8f;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #73769b;
+      margin: 10px 0;
+    }
+    .social-login {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px 0;
+    }
+    .social-login button {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      width: 48%;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: #73769b;
+      cursor: pointer;
+    }
+    .input-group {
+      margin: 15px 0;
+      text-align: left;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .checkbox-group {
+      text-align: left;
+      font-size: 0.9rem;
+      color: #73769b;
+      margin: 10px 0;
+    }
+    .button {
+      margin: 15px 0;
+    }
+    .button button {
+      width: 100%;
+      background-color: #736ef1;
+      color: white;
+      padding: 10px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .link {
+      font-size: 0.9rem;
+      color: #736ef1;
+      margin-top: 10px;
+    }
+    .link a {
+      color: #736ef1;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Welcome</h1>
+      <p>Please login or sign up to continue using our app.</p>
+      <div class="social-login">
+        <button>Facebook</button>
+        <button>Twitter</button>
+      </div>
+      <p>or login with email</p>
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password">
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="privacy-policy">
+        <label for="privacy-policy">I agree with privacy policy</label>
+      </div>
+      <div class="button">
+        <button>Sign Up</button>
+      </div>
+      <div class="link">
+        <p>You already have an account? <a href="#">Login</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
